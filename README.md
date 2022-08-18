@@ -1,4 +1,2 @@
 # metformin-physics-causal
-Data for the manuscript "Physics-informed causal inference aided by machine learning:  Transport of metformin in sandy media".
-
-The jupyter notebook will be updated shortly.
+Data and Notebook for the manuscript "Physics-informed causal inference aided by machine learning:  Transport of metformin in sandy media".
