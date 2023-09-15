@@ -1,0 +1,9 @@
+{
+    "modify_weights": {"_type": "choice", "_value": [1]},
+    "lambda_1": {"_type": "choice", "_value": [0,0.3,1,2]},
+    "act_func": {"_type": "choice", "_value": ["Tanh","Sigmoid","ReLU","LeakyReLU","Softplus"]},
+    "hidden_layer_number": {"_type": "choice", "_value": [1,2,3]},
+    "layer_size": {"_type": "choice", "_value": [16,32,64]},
+    "learning_rate": {"_type": "choice", "_value": [0.001,0.005,0.01,0.05]}
+}
+
