@@ -1,2 +1,3 @@
 # metformin-physics-causal
-Data and Notebook for the manuscript "Physics-informed causal inference aided by machine learning:  Transport of metformin in sandy media".
+Data and Notebook for the manuscript "Causal Prior-Embedded Physics-Informed Neural Networks and
+a Case Study on Metformin Transport in Porous Media."
