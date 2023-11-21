@@ -116,25 +116,25 @@ class MyNet(torch.nn.Module):
         self.layer_size = params['layer_size']
         hidden_layer_numer = params['hidden_layer_number']
 
-        self.input_layer = torch.nn.Linear(input_size, self.layer_size)
+        self.first_layer = torch.nn.Linear(input_size, self.layer_size)
         self.act_func = map_act_func(params['act_func'])
         
         if params['modify_weights']:
-            self.input_layer.weight.data = self.weight_dist_gen(params['ate_weight'])
-            self.input_layer.bias.data.fill_(0.0)
+            self.first_layer.weight.data = self.weight_dist_gen(params['ate_weight'])
+            self.first_layer.bias.data.fill_(0.0)
 
         if hidden_layer_numer >= 1:
             self.hidden_layers = torch.nn.ModuleList([torch.nn.Linear(self.layer_size, self.layer_size) for _ in range(hidden_layer_numer)])
-        self.output_layer = torch.nn.Linear(self.layer_size, 1)
+        self.final_layer = torch.nn.Linear(self.layer_size, 1)
 
 
         
     def forward(self, x):
-        x = self.act_func(self.input_layer(x))
+        x = self.act_func(self.first_layer(x))
         if hasattr(self, 'hidden_layers'):
             for hidden_layer in self.hidden_layers:
                 x = self.act_func(hidden_layer(x))
-        x = self.output_layer(x)
+        x = self.final_layer(x)
         return x
     
     def weight_dist_gen(self, ate_vals):
