@@ -13,13 +13,11 @@ This repository contains:
    - **config-example.yaml**: Example experiment configuration for NNI
    For a detailed instruction on NNI, please refer to [NNI Documentation](https://nni.readthedocs.io/en/stable/)
 
-Due to the size and format of the files mentioned below, we are considering uploading the following files associated with this paper to **Zenodo**:
+Due to the size and format of the files mentioned below, we are considering uploading the following files associated with this paper to **Zenodo** in the future releases:
 
 1. Original Hydrus-1D files (from the column experiment data)
 2. Phydrus files (For generating augmented data)
 3. Our NNI experiment results (1,440 runs)
-
-We will provide an update here before Sep 28, 2023.
 
 References
 
