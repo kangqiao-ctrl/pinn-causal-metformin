@@ -11,13 +11,13 @@ This repository contains:
 3. [NNI](https://github.com/microsoft/nni) (Ref2) configuration related files. 
    - **search_space.json**: Example search space configuration for NNI
    - **config-example.yaml**: Example experiment configuration for NNI
-   For a detailed instruction on NNI, please refer to [NNI Documentation](https://nni.readthedocs.io/en/stable/)
+   For a detailed instruction on using NNI, please refer to [NNI Documentation](https://nni.readthedocs.io/en/stable/)
 
-Due to the size and format of the files mentioned below, we are considering uploading the following files associated with this paper to **Zenodo** in the future releases:
-
-1. Original Hydrus-1D files (from the column experiment data)
-2. Phydrus files (For generating augmented data)
+Due to their size and format, certain files are not included in this repository but are available upon request at this stage. These files include:
+1. Original Hydrus-1D files (From the column experiment)
+2. Phydrus files (To generate augmented data)
 3. Our NNI experiment results (1,440 runs)
+We are planning to upload these files to **Zenodo** in future releases.
 
 References
 
