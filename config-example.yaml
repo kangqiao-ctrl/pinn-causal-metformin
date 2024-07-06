@@ -1,6 +1,6 @@
 experimentName: NNI Tunner 
 searchSpaceFile: search_space.json
-trialCommand: python model_causal_reg.py
+trialCommand: python causal_embedded_nn.py
 trialCodeDirectory: .
 trialGpuNumber: 1
 trialConcurrency: 1
